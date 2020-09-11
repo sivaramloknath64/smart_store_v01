@@ -4,7 +4,7 @@ pipeline {
 		stage('nugget restore'){
 			steps{
 				  echo "nugget restoring packages"
-				bat "nuget restore \"${workspace}/src/SmartStoreNET.sln\""
+				bat "Nuget restore \"${workspace}/src/SmartStoreNET.sln\""
 				
 				
 					}
