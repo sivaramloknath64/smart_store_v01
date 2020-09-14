@@ -13,7 +13,7 @@ pipeline {
 				stage('Build') {
     					steps {
                                         echo " building "
-						bat "\"${tool 'MSBuild'}\" src/SmartStoreNet.sln  /t:build"
+						bat "\"${tool 'MSBuild'}\" src/SmartStoreNet.sln  build"
 
 					}
 				}
